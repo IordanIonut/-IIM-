@@ -18,7 +18,7 @@ module.exports = {
         sm: ['14px', '20px'],
         base: ['16px', '24px'],
         lg: ['20px', '28px'],
-        xl: ['32px'],
+        xl: ['32px', '20px'],
       },
       fontWeight: {},
       lineHeight: {},
@@ -35,6 +35,8 @@ module.exports = {
       maxHeight: {},
     },
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-animate"),
+  ],
 }
 

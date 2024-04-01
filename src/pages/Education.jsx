@@ -150,7 +150,7 @@ const Education = () => {
             <div class="pt-5 pr-[30px] pb-5 pl-[30px] flex flex-col gap-2.5 items-center justify-center self-stretch shrink-0 relative">
               <div class="flex flex-col gap-[30px] items-center justify-center self-stretch shrink-0 relative">
                 <div class="text-[#ffffff] text-center font-['Inter-Regular',_sans-serif] text-2xl font-normal relative self-stretch">
-                  Android Studio, TEXTRON
+                Course - Android Studio, TEXTRON
                 </div>
                 <div class="text-[#ffffff] text-center font-['Inter-Regular',_sans-serif] text-2xl font-normal relative">
                   Oct 2022 – Feb 2023
@@ -196,7 +196,7 @@ const Education = () => {
             <div class="pt-5 pr-[30px] pb-5 pl-[30px] flex flex-col gap-2.5 items-center justify-center self-stretch shrink-0 relative">
               <div class="flex flex-col gap-[30px] items-center justify-center self-stretch shrink-0 relative">
                 <div class="text-[#ffffff] text-center font-['Inter-Regular',_sans-serif] text-2xl font-normal relative self-stretch">
-                  Automatic Testing, ENDAVA
+                  Course - Automatic Testing, ENDAVA
                 </div>
                 <div class="text-[#ffffff] text-center font-['Inter-Regular',_sans-serif] text-2xl font-normal relative">
                   Jan 2022 – Apr 2022

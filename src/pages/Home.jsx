@@ -15,7 +15,7 @@ const Home = () => {
         </div>
         <div class="flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative">
           <div class="flex flex-row gap-2.5 items-center justify-end self-stretch shrink-0 relative">
-            <div class="text-[#919191] text-left font-['Inter-Regular',_sans-serif] text-[34px] font-normal relative flex-1">
+            <div class="text-[#919191] text-left font-['Inter-Regular',_sans-serif] text-4xl font-normal relative flex-1">
               Hello, my name is Ionut. Nice to meet you! I would like to welcome
               you to my personal portfolio.
             </div>
