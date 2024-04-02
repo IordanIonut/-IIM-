@@ -2,13 +2,13 @@ const projects = [
     {
         position: 1,
         title: "MUsic PLay",
-        keyWords: ["React JS", "Spring Boot", "Redux JS", "RapidApi", "MySQl", "Spring Security Data", "Authentication", "Maven", "Youtube", "Spotify", "Apple Music", "Shazam"],
+        keyWords: ["React JS", "Spring Boot", "Redux JS", "RapidApi", "MySQl", "Spring Security", "Authentication", "Maven", "Youtube", "Spotify", "Apple Music", "Shazam"],
         link: "https://github.com/IordanIonut/MUsic-PLay-Frontent"
     },
     {
         position: 2,
         title: "QuizMaster-Taker",
-        keyWords: ["Android Studio", "Spring Boot", "XML", "Api", "MySQl", "Spring Security Data", "Authentication", "Grandle", "School", "Android App"],
+        keyWords: ["Android Studio", "Spring Boot", "XML", "Api", "MySQl", "Spring Security", "Authentication", "Grandle", "School", "Android App"],
         link: "https://github.com/IordanIonut/QuizMaster-Taker"
     },
     {

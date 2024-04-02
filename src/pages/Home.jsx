@@ -1,10 +1,14 @@
 import React from "react";
+import { Element } from "react-scroll";
 
 //          src={`${process.env.PUBLIC_URL}/Image.png`}
 
 const Home = () => {
   return (
-    <div class="pr-[50px] pl-[50px] flex flex-row items-center justify-between self-stretch shrink-0 relative">
+    <Element
+      name="home"
+      class="pr-[50px] pl-[50px] flex flex-row items-center justify-between self-stretch shrink-0 relative"
+    >
       <div class="flex flex-col gap-20 items-start justify-center flex-1 relative">
         <div class="self-stretch shrink-0 h-52 relative">
           <div class="text-[#006400] text-left font-['JejuGothic-Regular',_sans-serif] text-8xl font-normal absolute right-[0%] left-[0%] w-[100%] bottom-[0%] top-[0%] h-[100%]">
@@ -32,7 +36,7 @@ const Home = () => {
       </div>
       <svg
         class="shrink-0 w-[150px] h-[150px] absolute left-[calc(50%_-_-153.7px)] top-[417.22px] overflow-visible"
-        style={{transform: 'translate(-81.7px, 0px)'}}
+        style={{ transform: "translate(-81.7px, 0px)" }}
         width="208"
         height="208"
         viewBox="0 0 208 208"
@@ -78,7 +82,7 @@ const Home = () => {
       </svg>
       <svg
         class="pt-[23px] pr-[9px] pb-[23px] pl-[9px] shrink-0 w-[149.75px] h-[149.12px] absolute left-[calc(50%_-_303.78px)] top-[calc(50%_-_-166.5px)] overflow-visible"
-        style={{transform: 'translate(-81.22px, 0px)'}}
+        style={{ transform: "translate(-81.22px, 0px)" }}
         width="207"
         height="207"
         viewBox="0 0 207 207"
@@ -124,7 +128,7 @@ const Home = () => {
       </svg>
       <svg
         class="shrink-0 w-[150px] h-[150px] absolute left-[calc(50%_-_114.3px)] top-[63px] overflow-visible"
-        style={{transform: 'translate(-81.7px, 0px)'}}
+        style={{ transform: "translate(-81.7px, 0px)" }}
         width="208"
         height="208"
         viewBox="0 0 208 208"
@@ -168,7 +172,7 @@ const Home = () => {
           </clipPath>
         </defs>
       </svg>
-    </div>
+    </Element>
   );
 };
 

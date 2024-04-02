@@ -1,16 +1,20 @@
-import './App.css';
-import Navbar from './pages/Navbar'
-import Home from './pages/Home'
-import Space from './components/Space';
-import About from './pages/About';
-import Skills from './pages/Skills';
-import Portofolio from './pages/Portofolio';
-import Education from './pages/Education';
-import Footer from './pages/Footer';
+import "./App.css";
+import Navbar from "./pages/Navbar";
+import Home from "./pages/Home";
+import Space from "./components/Space";
+import About from "./pages/About";
+import Skills from "./pages/Skills";
+import Portofolio from "./pages/Portofolio";
+import Education from "./pages/Education";
+import Footer from "./pages/Footer";
 
 function App() {
   return (
-    <div className={"bg-[#000000] flex flex-col gap-[30px] items-start justify-start relative overflow-hidden " }>
+    <div
+      className={
+        "bg-[#000000] flex flex-col gap-[50px] items-start justify-start relative overflow-hidden "
+      }
+    >
       <Navbar />
       <Home />
       <Space />

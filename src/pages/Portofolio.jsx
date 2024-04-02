@@ -2,17 +2,17 @@ import React, { useState } from "react";
 import projects from "../utili/obj";
 import CardsCenter from "../components/CardsCenter";
 import Cards from "../components/Cards";
+import { Element } from "react-scroll";
 
 const Portofolio = () => {
-  const [position, setPosition] = useState(1);
+  const [position, setPosition] = React.useState(0);
   const [isBouncing, setIsBouncing] = useState(false);
 
-  console.log(projects);
-  //className={isBouncing ? "animate-ping " : ""}
-  //in obiect sa se schimbe nu doar in card, ca sa se actoalizese toate elementele
-
   return (
-    <div class="pr-[50px] pl-[50px] flex flex-col gap-10 items-start justify-start self-stretch shrink-0 relative">
+    <Element
+      name="portfolio"
+      class="pr-[50px] pl-[50px] flex flex-col gap-10 items-start justify-start self-stretch shrink-0 relative"
+    >
       <div class="self-stretch shrink-0 h-[52px] relative">
         <div class="text-[#006400] text-left font-['JejuGothic-Regular',_sans-serif] text-[50px] font-normal absolute right-[0%] left-[0%] w-[100%] bottom-[-1.92%] top-[-1.92%] h-[103.85%] flex items-center justify-start">
           Portofolio
@@ -32,16 +32,29 @@ const Portofolio = () => {
           (isBouncing ? " animate-pulse  " : "")
         }
       >
-        <Cards />
+        <Cards
+          projects={
+            projects[(position - 1 + 10 * projects.length) % projects.length]
+          }
+        />
+
         <CardsCenter
           position={position}
           setPosition={setPosition}
           isBouncing={isBouncing}
           setIsBouncing={setIsBouncing}
+          projects={
+            projects[(position + 10 * projects.length) % projects.length]
+          }
         />
-        <Cards />
+
+        <Cards
+          projects={
+            projects[(position + 1 + 10 * projects.length) % projects.length]
+          }
+        />
       </div>
-    </div>
+    </Element>
   );
 };
 

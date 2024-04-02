@@ -3,8 +3,8 @@ import React from "react";
 const Space = () => {
   return (
     <div
-    class="pt-2.5 pb-2.5 flex flex-col items-center justify-start self-stretch shrink-0 h-[127px] relative"
-    style={{ transformOrigin: "0 0", transform: "rotate(0deg) scale(1, 1)" }}
+      class="pt-2.5 pb-2.5 flex flex-col items-center justify-start self-stretch shrink-0 h-[127px] relative"
+      style={{ transformOrigin: "0 0", transform: "rotate(0deg) scale(1, 1)" }}
     >
       <div
         class="bg-[#006400] pt-5 flex flex-row items-center justify-between self-stretch shrink-0 relative"

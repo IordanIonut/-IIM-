@@ -14,7 +14,7 @@ const Footer = () => {
           </div>
           <svg
             class="shrink-0 w-[106.99px] h-[106.99px] absolute left-[calc(50%_-_8.86px)] top-[63.19px] overflow-visible"
-            style={{transform: 'translate(0px, -84.6px)'}}
+            style={{ transform: "translate(0px, -84.6px)" }}
             width="142"
             height="161"
             viewBox="0 0 142 161"
@@ -41,7 +41,7 @@ const Footer = () => {
           </svg>
           <svg
             class="shrink-0 w-[200px] h-[200px] absolute left-[calc(50%_-_-229.42px)] top-[-56px] overflow-visible"
-            style={{transform: 'translate(-141.42px, 0px)'}}
+            style={{ transform: "translate(-141.42px, 0px)" }}
             width="283"
             height="284"
             viewBox="0 0 283 284"
@@ -72,7 +72,7 @@ const Footer = () => {
             <div class="flex flex-row gap-2.5 items-center justify-end self-stretch shrink-0 relative">
               <div
                 class="text-[#919191] text-left font-['Inter-Regular',_sans-serif] text-[34px] font-normal relative"
-                style={{textDecoration: 'underline'}}
+                style={{ textDecoration: "underline" }}
               >
                 Linkedin
               </div>
@@ -82,7 +82,7 @@ const Footer = () => {
             <div class="flex flex-row gap-2.5 items-center justify-end self-stretch shrink-0 relative">
               <div
                 class="text-[#919191] text-left font-['Inter-Regular',_sans-serif] text-[34px] font-normal relative"
-                style={{textDecoration: 'underline'}}
+                style={{ textDecoration: "underline" }}
               >
                 GitHub
               </div>
@@ -92,7 +92,7 @@ const Footer = () => {
             <div class="flex flex-row gap-2.5 items-center justify-end self-stretch shrink-0 relative">
               <div
                 class="text-[#919191] text-left font-['Inter-Regular',_sans-serif] text-[34px] font-normal relative"
-                style={{textDecoration: 'underline'}}
+                style={{ textDecoration: "underline" }}
               >
                 Facebook
               </div>
