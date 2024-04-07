@@ -5,7 +5,7 @@ const Skills = () => {
   return (
     <Element
       name="skills"
-      class="pr-[50px] pl-[50px] flex flex-col gap-10 items-start justify-start self-stretch shrink-0 relative"
+      class="pr-[20px] pl-[20px] sm:pr-[50px] sm:pl-[50px] pt-3 pb-3 flex flex-col gap-10 items-start justify-start self-stretch shrink-0 relative"
     >
       <svg
         class="shrink-0 w-[131.95px] h-[104.79px] absolute left-[calc(50%_-_-335.33px)] top-[23.53px] overflow-visible"

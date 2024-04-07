@@ -1,90 +1,111 @@
 import React from "react";
 import { Link } from "react-scroll";
+import {Menu, X} from "lucide-react";
 
 const NavBar = () => {
+  const[isOpen, setIsOpen] = React.useState(false);
+
+  const toggleOpen = () =>{
+    setIsOpen(!isOpen);
+  }
+
   return (
-    <div class="pt-5 pr-[50px] pb-5 pl-[50px] flex flex-row items-center justify-between self-stretch shrink-0 relative overflow-hidden">
-      <div class="text-[#ffffff] text-center font-['JejuGothic-Regular',_sans-serif] text-5xl font-normal relative select-none">
+    <>
+    <nav class="pt-5 pr-[20px] pl-[20px] sm:pr-[50px] sm:pl-[50px] flex flex-row items-center justify-between self-stretch shrink-0 relative overflow-hidden">
+      <div class="text-[#ffffff] text-center font-['JejuGothic-Regular',_sans-serif] text-2xl sm:text-4xl font-normal relative select-none">
         &lt; IIM /&gt;
       </div>
-      <div class="flex flex-row gap-[50px] items-center justify-start self-stretch shrink-0 relative">
+      <div class="flex flex-row md:gap-[20px] md:flex-none lg:gap-[50px] items-center justify-start self-stretch shrink-0 relative">
         <Link
-          activeClass="active"
           to="home"
+          activeClass="active"
           spy={true}
           smooth={true}
           offset={-70}
           duration={500}
+          class="h-[0px] w-[0px] md:visible md:h-auto md:w-auto"
         >
-          <div class="hover:border-solid hover:border-[#006400] hover:border-b-2 flex flex-row items-center justify-between self-stretch shrink-0 relative">
-            <div class="hover:text-[#006400] text-text-color text-left font-['Inter-Regular',_sans-serif] text-2xl font-normal relative">
+          <div class="hover:border-solid hover:border-[#006400] hover:border-b-2 flex flex-row invisible md:visible items-center 
+          justify-between self-stretch shrink-0 relative h-[0px] w-[0px] md:visible md:h-auto md:w-auto">
+            <div class="hover:text-[#006400] text-text-color text-left font-['Inter-Regular',_sans-serif] text-xl font-normal relative select-none">
               Home
             </div>
           </div>
         </Link>
         <Link
-          activeClass="active"
           to="about"
+          activeClass="active"
           spy={true}
           smooth={true}
           offset={-70}
           duration={500}
+          class="h-[0px] w-[0px] md:visible md:h-auto md:w-auto"
         >
-          <div class="hover:border-solid hover:border-[#006400] hover:border-b-2 flex flex-row items-center justify-between self-stretch shrink-0  relative">
-            <div class="hover:text-[#006400] text-text-color text-left font-['Inter-Regular',_sans-serif] text-2xl font-normal relative">
+          <div class="hover:border-solid hover:border-[#006400] invisible md:visible hover:border-b-2 flex flex-row items-center 
+          justify-between self-stretch shrink-0  relative h-[0px] w-[0px] md:visible md:h-auto md:w-auto">
+            <div class="hover:text-[#006400] text-text-color text-left font-['Inter-Regular',_sans-serif] text-xl font-normal relative select-none">
               About me
             </div>
           </div>
         </Link>
         <Link
-          activeClass="active"
           to="skills"
+          activeClass="active"
           spy={true}
           smooth={true}
           offset={-70}
           duration={500}
+          class="h-[0px] w-[0px] md:visible md:h-auto md:w-auto"
         >
-          <div class="hover:border-solid hover:border-[#006400] hover:border-b-2 flex flex-row items-center justify-between self-stretch shrink-0 relative">
-            <div class="hover:text-[#006400] text-text-color text-left font-['Inter-Regular',_sans-serif] text-2xl font-normal relative">
+          <div class="hover:border-solid hover:border-[#006400] invisible md:visible hover:border-b-2 flex flex-row items-center h-[0px] w-[0px] md:visible md:h-auto md:w-auto 
+          justify-between self-stretch shrink-0 relative">
+            <div class="hover:text-[#006400] text-text-color text-left font-['Inter-Regular',_sans-serif] text-xl font-normal relative select-none">
               Skills
             </div>
           </div>
         </Link>
         <Link
-          activeClass="active"
           to="portfolio"
+          activeClass="active"
           spy={true}
           smooth={true}
           offset={-70}
           duration={500}
+          class="h-[0px] w-[0px] md:visible md:h-auto md:w-auto"
         >
-          <div class="hover:border-solid hover:border-[#006400] hover:border-b-2 flex flex-row items-center justify-between self-stretch shrink-0 relative">
-            <div class="hover:text-[#006400] text-text-color text-left font-['Inter-Regular',_sans-serif] text-2xl font-normal relative">
+          <div class="hover:border-solid hover:border-[#006400] invisible md:visible hover:border-b-2 flex flex-row items-center h-[0px] w-[0px] md:visible md:h-auto md:w-auto
+          justify-between self-stretch shrink-0 relative">
+            <div class="hover:text-[#006400] text-text-color text-left font-['Inter-Regular',_sans-serif] text-xl font-normal relative select-none">
               Portfolio
             </div>
           </div>
         </Link>
         <Link
-          activeClass="active"
           to="education"
+          activeClass="active"
           spy={true}
           smooth={true}
           offset={-70}
           duration={500}
+          class="h-[0px] w-[0px] md:visible md:h-auto md:w-auto"
         >
-          <div class="hover:border-solid hover:border-[#006400] hover:border-b-2 flex flex-row items-center justify-between self-stretch shrink-0 relative">
-            <div class="hover:text-[#006400] text-text-color text-left font-['Inter-Regular',_sans-serif] text-2xl font-normal relative">
+          <div class="hover:border-solid hover:border-[#006400] invisible md:visible hover:border-b-2 flex flex-row items-center h-[0px] w-[0px] md:visible md:h-auto md:w-auto
+          justify-between self-stretch shrink-0 relative">
+            <div class="hover:text-[#006400] text-text-color text-left font-['Inter-Regular',_sans-serif] text-xl font-normal relative select-none">
               Education
             </div>
           </div>
         </Link>
+        <div className="md:hidden">
+          <button onClick={toggleOpen}>{isOpen ? <X color="#919191"  size={30}  /> : <Menu color="#919191" size={30} />}</button>
+        </div>
       </div>
-      <div class="flex flex-row items-center justify-between shrink-0 w-[174px] relative">
-        <div class="text-[#919191] text-left font-['Inter-Regular',_sans-serif] text-2xl font-normal relative">
+      <div class="flex flex-row items-center justify-between shrink-0 gap-5 relative">
+        <div class="text-[#919191] text-left font-['Inter-Regular',_sans-serif] text-base sm:text-2xl font-normal relative select-none">
           EN
         </div>
         <svg
-          class="shrink-0 w-8 h-8 relative overflow-visible"
+          class="shrink-0 w-4 h-4 sm:w-6 sm:h-6 relative overflow-visible"
           width="32"
           height="32"
           viewBox="0 0 32 32"
@@ -101,7 +122,7 @@ const NavBar = () => {
           />
         </svg>
         <svg
-          class="shrink-0 w-8 h-8 relative overflow-visible"
+          class="shrink-0 w-4 h-4 sm:w-6 sm:h-6 relative overflow-visible"
           width="34"
           height="34"
           viewBox="0 0 34 34"
@@ -118,7 +139,84 @@ const NavBar = () => {
           />
         </svg>
       </div>
-    </div>
+    </nav>
+    {isOpen && (
+      <div>
+          <div class="flex flex-col w-dvw md:gap-[20px] lg:gap-[50px] items-center justify-start self-stretch shrink-0 relative">
+        <Link
+          to="home"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          <div class="hover:border-solid hover:border-[#006400] hover:border-b-2 items-center justify-between self-stretch shrink-0 relative">
+            <div class="hover:text-[#006400] text-text-color text-left font-['Inter-Regular',_sans-serif] text-xl font-normal relative">
+              Home
+            </div>
+          </div>
+        </Link>
+        <Link
+          to="about"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          <div class="hover:border-solid hover:border-[#006400]  hover:border-b-2 flex flex-row items-center justify-between self-stretch shrink-0  relative">
+            <div class="hover:text-[#006400] text-text-color text-left font-['Inter-Regular',_sans-serif] text-xl font-normal relative">
+              About me
+            </div>
+          </div>
+        </Link>
+        <Link
+          to="skills"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          <div class="hover:border-solid hover:border-[#006400] hover:border-b-2 flex flex-row items-center justify-between self-stretch shrink-0 relative">
+            <div class="hover:text-[#006400] text-text-color text-left font-['Inter-Regular',_sans-serif] text-xl font-normal relative">
+              Skills
+            </div>
+          </div>
+        </Link>
+        <Link
+          to="portfolio"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          <div class="hover:border-solid hover:border-[#006400] hover:border-b-2 flex flex-row items-center justify-between self-stretch shrink-0 relative">
+            <div class="hover:text-[#006400] text-text-color text-left font-['Inter-Regular',_sans-serif] text-xl font-normal relative">
+              Portfolio
+            </div>
+          </div>
+        </Link>
+        <Link
+          activeClass="active"
+          to="education"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          <div class="hover:border-solid hover:border-[#006400] hover:border-b-2 flex flex-row items-center justify-between self-stretch shrink-0 relative">
+            <div class="hover:text-[#006400] text-text-color text-left font-['Inter-Regular',_sans-serif] text-xl font-normal relative">
+              Education
+            </div>
+          </div>
+        </Link>
+      </div>
+      </div>
+    )}
+    </>
   );
 };
 

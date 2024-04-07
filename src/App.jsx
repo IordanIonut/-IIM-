@@ -12,7 +12,7 @@ function App() {
   return (
     <div
       className={
-        "bg-[#000000] flex flex-col gap-[50px] items-start justify-start relative overflow-hidden "
+        "bg-[#000000] flex flex-col items-start justify-start relative overflow-hidden "
       }
     >
       <Navbar />

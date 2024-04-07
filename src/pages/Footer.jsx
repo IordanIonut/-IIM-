@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div class="pt-[30px] pr-[50px] pb-[30px] pl-[50px] flex flex-col gap-10 items-center justify-start self-stretch shrink-0 h-[284px] relative">
+    <div class="pr-[20px] pl-[20px] sm:pr-[50px] sm:pl-[50px] pt-3 pb-3 flex flex-col gap-10 items-center justify-start self-stretch shrink-0 h-[284px] relative">
       <div class="flex flex-row items-center justify-between self-stretch flex-1 relative">
         <div class="flex flex-col gap-2.5 items-start justify-end self-stretch flex-1 relative">
           <div class="flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative">

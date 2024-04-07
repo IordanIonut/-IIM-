@@ -1,17 +1,15 @@
 import React from "react";
 import { Element } from "react-scroll";
 
-//          src={`${process.env.PUBLIC_URL}/Image.png`}
-
 const Home = () => {
   return (
     <Element
       name="home"
-      class="pr-[50px] pl-[50px] flex flex-row items-center justify-between self-stretch shrink-0 relative"
+      class="pr-[20px] pl-[20px] sm:pr-[50px] sm:pl-[50px] inline sm:flex flex-row items-center justify-between self-stretch shrink-0 relative"
     >
-      <div class="flex flex-col gap-20 items-start justify-center flex-1 relative">
-        <div class="self-stretch shrink-0 h-52 relative">
-          <div class="text-[#006400] text-left font-['JejuGothic-Regular',_sans-serif] text-8xl font-normal absolute right-[0%] left-[0%] w-[100%] bottom-[0%] top-[0%] h-[100%]">
+      <div class="flex flex-col lg:gap-20 items-start justify-center flex-1 relative">
+        <div class="self-stretch shrink-0 md:h-32 xl:h-32 relative">
+          <div class="text-[#006400] text-left font-['JejuGothic-Regular',_sans-serif] text-4xl sm:text-5xl md:text-5xl lg:text-7xl xl:text-8xl font-normal">
             Iordan
             <br />
             Ionut Marius
@@ -19,23 +17,32 @@ const Home = () => {
         </div>
         <div class="flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative">
           <div class="flex flex-row gap-2.5 items-center justify-end self-stretch shrink-0 relative">
-            <div class="text-[#919191] text-left font-['Inter-Regular',_sans-serif] text-4xl font-normal relative flex-1">
+            <div
+              class="text-[#919191] text-left font-['Inter-Regular',_sans-serif] font-normal relative flex-1
+              sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
+            >
               Hello, my name is Ionut. Nice to meet you! I would like to welcome
               you to my personal portfolio.
             </div>
           </div>
         </div>
       </div>
-      <div class="flex flex-row justify-between flex-1 h-[667px] relative">
+      <div
+        className={
+          "flex flex-row items-center justify-between shrink-0 relative "
+        }
+      >
         <img
-          class="flex-1 h-[730px] relative"
-          //style={{objectFit: 'cover'}}
+          className={"flex-1 h-3/6 sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] rounded-[327px] relative opacity-60"}
+          style={{ objectFit: "cover" }}
           src={`${process.env.PUBLIC_URL}/Image.png`}
           alt="im"
         />
       </div>
       <svg
-        class="shrink-0 w-[150px] h-[150px] absolute left-[calc(50%_-_-153.7px)] top-[417.22px] overflow-visible"
+        class="shrink-0 absolute overflow-visible md:w-[149.75px] sm:w-[100px] sm:h-[100px] md:h-[149.12px] w-[70px] h-[70px]
+        sm:left-[calc(50%_-_1.78px)] md:left-[calc(80%_-_303.78px)] md:top-[calc(10%_-_-16.5px)] sm:top-[calc(1%_-_-16.5px)] sm:left-[calc(20%_-_-16.5px)] 
+        left-[calc(20%_-_10.78px)] top-[calc(70%_-_-10.5px)]"
         style={{ transform: "translate(-81.7px, 0px)" }}
         width="208"
         height="208"
@@ -81,7 +88,9 @@ const Home = () => {
         </defs>
       </svg>
       <svg
-        class="pt-[23px] pr-[9px] pb-[23px] pl-[9px] shrink-0 w-[149.75px] h-[149.12px] absolute left-[calc(50%_-_303.78px)] top-[calc(50%_-_-166.5px)] overflow-visible"
+        class="shrink-0 md:w-[149.75px] sm:w-[100px] sm:h-[100px] md:h-[149.12px] w-[70px] h-[70px]
+        absolute sm:left-[calc(50%_-_1.78px)] md:left-[calc(90%_-_303.78px)] md:top-[calc(30%_-_-166.5px)] sm:top-[calc(50%_-_-16.5px)] sm:left-[calc(80%_-_-16.5px)]
+        overflow-visible left-[calc(70%_-_10.78px)] top-[calc(50%_-_-10.5px)]"
         style={{ transform: "translate(-81.22px, 0px)" }}
         width="207"
         height="207"
@@ -127,7 +136,9 @@ const Home = () => {
         </defs>
       </svg>
       <svg
-        class="shrink-0 w-[150px] h-[150px] absolute left-[calc(50%_-_114.3px)] top-[63px] overflow-visible"
+        class="shrink-0 absolute overflow-visible md:w-[149.75px] sm:w-[100px] sm:h-[100px] md:h-[149.12px] w-[70px] 
+        h-[70px] sm:left-[calc(50%_-_1.78px)] md:left-[calc(55%_-_303.78px)] md:top-[calc(40%_-_-166.5px)] sm:top-[calc(70%_-_-16.5px)] sm:left-[calc(40%_-_23.78px)] 
+        left-[calc(30%_-_10.78px)] top-[calc(20%_-_-10.5px)]"
         style={{ transform: "translate(-81.7px, 0px)" }}
         width="208"
         height="208"

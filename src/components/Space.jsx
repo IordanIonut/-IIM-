@@ -3,18 +3,18 @@ import React from "react";
 const Space = () => {
   return (
     <div
-      class="pt-2.5 pb-2.5 flex flex-col items-center justify-start self-stretch shrink-0 h-[127px] relative"
+      class="flex flex-col items-center justify-start self-stretch shrink-0 relative"
       style={{ transformOrigin: "0 0", transform: "rotate(0deg) scale(1, 1)" }}
     >
       <div
-        class="bg-[#006400] pt-5 flex flex-row items-center justify-between self-stretch shrink-0 relative"
+        class="bg-[#006400] sm:pt-2 md:pt-3 lg:pt-4 xl:pt-5 flex flex-row items-center justify-between self-stretch shrink-0 relative pt-2"
         style={{
           transformOrigin: "0 0",
           transform: "rotate(0deg) scale(1, 1)",
         }}
       >
         <div
-          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] text-[32px] font-normal uppercase relative select-none"
+          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-normal uppercase relative select-none"
           style={{
             transformOrigin: "0 0",
             transform: "rotate(-0.598deg) scale(1, 1)",
@@ -23,7 +23,7 @@ const Space = () => {
           Frontend
         </div>
         <div
-          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] text-[32px] font-normal uppercase relative select-none"
+          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-normal uppercase relative select-none"
           style={{
             transformOrigin: "0 0",
             transform: "rotate(-0.598deg) scale(1, 1)",
@@ -32,7 +32,7 @@ const Space = () => {
           -
         </div>
         <div
-          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] text-[32px] font-normal uppercase relative select-none"
+          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-normal uppercase relative select-none"
           style={{
             transformOrigin: "0 0",
             transform: "rotate(-0.598deg) scale(1, 1)",
@@ -41,7 +41,7 @@ const Space = () => {
           Backend
         </div>
         <div
-          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] text-[32px] font-normal uppercase relative select-none"
+          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-normal uppercase relative select-none"
           style={{
             transformOrigin: "0 0",
             transform: "rotate(-0.598deg) scale(1, 1)",
@@ -50,7 +50,7 @@ const Space = () => {
           -
         </div>
         <div
-          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] text-[32px] font-normal uppercase relative select-none"
+          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-normal uppercase relative select-none"
           style={{
             transformOrigin: "0 0",
             transform: "rotate(-0.598deg) scale(1, 1)",
@@ -59,7 +59,7 @@ const Space = () => {
           design
         </div>
         <div
-          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] text-[32px] font-normal uppercase relative select-none"
+          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-normal uppercase relative select-none"
           style={{
             transformOrigin: "0 0",
             transform: "rotate(-0.598deg) scale(1, 1)",
@@ -68,7 +68,7 @@ const Space = () => {
           -
         </div>
         <div
-          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] text-[32px] font-normal uppercase relative select-none"
+          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-normal uppercase relative select-none"
           style={{
             transformOrigin: "0 0",
             transform: "rotate(-0.598deg) scale(1, 1)",
@@ -77,7 +77,7 @@ const Space = () => {
           Frontend
         </div>
         <div
-          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] text-[32px] font-normal uppercase relative select-none"
+          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-normal uppercase relative select-none"
           style={{
             transformOrigin: "0 0",
             transform: "rotate(-0.598deg) scale(1, 1)",
@@ -86,7 +86,7 @@ const Space = () => {
           -
         </div>
         <div
-          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] text-[32px] font-normal uppercase relative select-none"
+          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-normal uppercase relative select-none"
           style={{
             transformOrigin: "0 0",
             transform: "rotate(-0.598deg) scale(1, 1)",
@@ -95,7 +95,7 @@ const Space = () => {
           Backend
         </div>
         <div
-          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] text-[32px] font-normal uppercase relative select-none"
+          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-normal uppercase relative select-none"
           style={{
             transformOrigin: "0 0",
             transform: "rotate(-0.598deg) scale(1, 1)",
@@ -104,7 +104,7 @@ const Space = () => {
           -
         </div>
         <div
-          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] text-[32px] font-normal uppercase relative select-none"
+          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-normal uppercase relative select-none"
           style={{
             transformOrigin: "0 0",
             transform: "rotate(-0.598deg) scale(1, 1)",
@@ -114,13 +114,13 @@ const Space = () => {
         </div>
       </div>
       <div
-        class="bg-[#006400] pt-5 flex flex-row justify-between self-stretch opacity-70 shrink-0 relative pt-0 pb-4"
+        class="bg-[#006400] sm:pb-0.5 md:pb-2 lg:pb-4 xl:pb-5 flex flex-row justify-between self-stretch opacity-70 shrink-0 relative pt-1"
         style={{
           transform: "rotate(0deg) scale(-1, 1)",
         }}
       >
         <div
-          class="text-[#919191] text-center font-['JejuGothic-Regular',_sans-serif] text-[32px] font-normal uppercase relative select-none"
+          class="text-[#919191] text-center font-['JejuGothic-Regular',_sans-serif] sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-normal uppercase relative select-none"
           style={{
             transform: "rotate(0deg) scale(-1, 1)",
             filter: "blur(2px)",
@@ -129,7 +129,7 @@ const Space = () => {
           design
         </div>
         <div
-          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] text-[32px] font-normal uppercase relative w-[13.22px] h-[35.01px] select-none"
+          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-normal uppercase relative select-none"
           style={{
             transform: "rotate(0deg) scale(-1, 1)",
             filter: "blur(2px)",
@@ -138,7 +138,7 @@ const Space = () => {
           -
         </div>
         <div
-          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] text-[32px] font-normal uppercase relative select-none"
+          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-normal uppercase relative select-none"
           style={{
             transform: "rotate(0deg) scale(-1, 1)",
             filter: "blur(2px)",
@@ -147,7 +147,7 @@ const Space = () => {
           Backend
         </div>
         <div
-          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] text-[32px] font-normal uppercase relative w-[13.22px] h-[35.01px] select-none"
+          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-normal uppercase relative select-none"
           style={{
             transform: "rotate(0deg) scale(-1, 1)",
             filter: "blur(2px)",
@@ -156,7 +156,7 @@ const Space = () => {
           -
         </div>
         <div
-          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] text-[32px] font-normal uppercase relative select-none"
+          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-normal uppercase relative select-none"
           style={{
             transform: "rotate(0deg) scale(-1, 1)",
             filter: "blur(2px)",
@@ -165,7 +165,7 @@ const Space = () => {
           Frontend
         </div>
         <div
-          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] text-[32px] font-normal uppercase relative w-[13.22px] h-[35.01px] select-none"
+          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-normal uppercase relative select-none"
           style={{
             transform: "rotate(0deg) scale(-1, 1)",
             filter: "blur(2px)",
@@ -174,7 +174,7 @@ const Space = () => {
           -
         </div>
         <div
-          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] text-[32px] font-normal uppercase relative select-none"
+          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-normal uppercase relative select-none"
           style={{
             transform: "rotate(0deg) scale(-1, 1)",
             filter: "blur(2px)",
@@ -183,7 +183,7 @@ const Space = () => {
           design
         </div>
         <div
-          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] text-[32px] font-normal uppercase relative w-[13.22px] h-[35.01px] select-none"
+          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-normal uppercase relative select-none"
           style={{
             transform: "rotate(0deg) scale(-1, 1)",
             filter: "blur(2px)",
@@ -192,7 +192,7 @@ const Space = () => {
           -
         </div>
         <div
-          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] text-[32px] font-normal uppercase relative select-none"
+          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-normal uppercase relative select-none"
           style={{
             transform: "rotate(0deg) scale(-1, 1)",
             filter: "blur(2px)",
@@ -201,7 +201,7 @@ const Space = () => {
           Backend
         </div>
         <div
-          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] text-[32px] font-normal uppercase relative w-[13.22px] h-[35.01px] select-none"
+          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-normal uppercase relative select-none"
           style={{
             transform: "rotate(0deg) scale(-1, 1)",
             filter: "blur(2px)",
@@ -210,7 +210,7 @@ const Space = () => {
           -
         </div>
         <div
-          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] text-[32px] font-normal uppercase relative select-none"
+          class="text-[#919191] text-left font-['JejuGothic-Regular',_sans-serif] sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-normal uppercase relative select-none"
           style={{
             transform: "rotate(0deg) scale(-1, 1)",
             filter: "blur(2px)",
