@@ -7,9 +7,9 @@ const Education = () => {
       name="education"
       class="pr-[20px] pl-[20px] sm:pr-[50px] sm:pl-[50px] pt-3 pb-3 flex flex-col gap-10 items-center justify-center self-stretch shrink-0 relative"
     >
-      <div class="self-stretch shrink-0 h-[52px] relative">
-        <div class="text-[#006400] text-left font-['JejuGothic-Regular',_sans-serif] text-[50px] font-normal absolute right-[0%] left-[0%] w-[100%] bottom-[-1.92%] top-[-1.92%] h-[103.85%] flex items-center justify-start">
-          Education
+      <div class="self-stretch shrink-0 sm:h-[5px] md:h-[10px] lg:h-[20px] xl:h-[32px] relative">
+        <div class="text-[#006400] text-left font-['JejuGothic-Regular',_sans-serif]  text-2xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-normal absolute flex items-center justify-start">
+        Education
         </div>
       </div>
       <div class="flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative">

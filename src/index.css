@@ -7,3 +7,16 @@
         all: unset;
     }
 }
+
+@layer utilities {
+    .text-stroke-2 {
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: #fff;
+    }
+
+    .text-stroke-2 {
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #fff;
+      }
+  }
+  

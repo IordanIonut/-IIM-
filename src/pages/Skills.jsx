@@ -1,5 +1,7 @@
 import React from "react";
 import { Element } from "react-scroll";
+import { backend, frontend, design } from "../utili/information";
+import Table from "../components/Table";
 
 const Skills = () => {
   return (
@@ -8,7 +10,9 @@ const Skills = () => {
       class="pr-[20px] pl-[20px] sm:pr-[50px] sm:pl-[50px] pt-3 pb-3 flex flex-col gap-10 items-start justify-start self-stretch shrink-0 relative"
     >
       <svg
-        class="shrink-0 w-[131.95px] h-[104.79px] absolute left-[calc(50%_-_-335.33px)] top-[23.53px] overflow-visible"
+        class="shrink-0 absolute overflow-visible md:w-[149.75px] sm:w-[100px] sm:h-[100px] md:h-[149.12px] w-[70px] h-[70px]
+        md:left-[calc(90%_-_33.78px)] md:top-[calc(3%_-_-16.5px)]  sm:left-[calc(40%_-_1.78px)]
+        sm:top-[calc(20%_-_-16.5px)] left-[calc(60%_-_10.78px)] top-[calc(3%_-_-120.5px)]"
         style={{ transform: "translate(-173.83px, -34.2px)" }}
         width="175"
         height="129"
@@ -34,204 +38,119 @@ const Skills = () => {
           </clipPath>
         </defs>
       </svg>
-      <div class="self-stretch shrink-0 h-[52px] relative">
-        <div class="text-[#006400] text-left font-['JejuGothic-Regular',_sans-serif] text-[50px] font-normal absolute right-[0%] left-[0%] w-[100%] bottom-[-1.92%] top-[-1.92%] h-[103.85%] flex items-center justify-start">
+      <div class="self-stretch shrink-0 sm:h-[5px] md:h-[10px] lg:h-[20px] xl:h-[32px] relative">
+        <div class="text-[#006400] text-left font-['JejuGothic-Regular',_sans-serif]  text-2xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-normal absolute flex items-center justify-start">
           Skills
         </div>
       </div>
       <div class="flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative">
         <div class="flex flex-row gap-2.5 items-center justify-end self-stretch shrink-0 relative">
-          <div class="text-[#919191] text-left font-['Inter-Regular',_sans-serif] text-[34px] font-normal relative flex-1">
+          <div class="text-[#919191] text-left font-['Inter-Regular',_sans-serif] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-normal relative flex-1">
             Available skills on which I can work
           </div>
         </div>
       </div>
-      <div class="flex flex-col gap-[60px] items-start justify-start self-stretch shrink-0 relative">
+      <div class="flex flex-col gap-[30px] items-start justify-start self-stretch shrink-0 relative">
         <div class="flex flex-col gap-10 items-start justify-start self-stretch shrink-0 relative py-0.5">
-          <div class="flex flex-row gap-[300px] items-start justify-start self-stretch shrink-0 relative">
+          <div class="flex flex-row gap-[40px] sm:gap-[100px] items-start justify-start self-stretch shrink-0 relative">
             <div class="flex flex-row items-center justify-between shrink-0 relative">
-              <div class="text-[#006400] text-left font-['JejuGothic-Regular',_sans-serif] text-[32px] font-normal uppercase relative">
+              <div
+                class="text-[#006400] text-left font-['JejuGothic-Regular',_sans-serif] sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 
+              font-normal uppercase relative"
+              >
                 01.
               </div>
-              <div class="text-[#ffffff] text-left font-['JejuGothic-Regular',_sans-serif] text-[32px] font-normal uppercase relative">
+              <div
+                class="text-[#ffffff] text-left font-['JejuGothic-Regular',_sans-serif] sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 
+              font-normal uppercase relative"
+              >
                 BackEnd
               </div>
             </div>
-            <div class="flex flex-col gap-2.5 items-start justify-start flex-1 relative">
-              <div class="flex flex-row gap-2.5 items-center justify-end self-stretch shrink-0 relative">
-                <div class="text-[#919191] text-left font-['Inter-Regular',_sans-serif] text-[34px] font-normal relative flex-1">
-                  A solid understanding of backend technologies, including
-                  databases, server-side languages , APIs, and frameworks.
-                  Proficiency in designing, developing, and maintaining scalable
-                  and efficient backend systems to support web and mobile
-                  applications. <br />
+            <div class="flex flex-col gap-2.5 items-start justify-start self-stretch flex-1 relative">
+              <div class="flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative">
+                <div class="flex flex-row gap-2.5 items-start justify-start self-stretch shrink-0 relative">
+                  <div
+                    class="text-[#919191] text-left font-['Inder-Regular',_sans-serif] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl
+                    font-normal relative flex-1"
+                  >
+                    A solid understanding of backend technologies, including
+                    databases, server-side languages , APIs, and frameworks.
+                    Proficiency in designing, developing, and maintaining
+                    scalable and efficient backend systems to support web and
+                    mobile applications.
+                    <br />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="flex flex-row gap-0 items-start justify-start self-stretch flex-1 relative">
-            <div class="border-solid border-[#ffffff] border-2 flex flex-row items-center justify-between flex-1 h-[140px] relative">
-              <div
-                class="text-[#ffffff] text-center font-['JejuGothic-Regular',_sans-serif] text-2xl font-normal relative flex-1"
-                style={{ webkitTextStroke: "2px #ffffff" }}
-              >
-                Building
-                <br />
-                server-side
-                <br />
-                architecture
-                <br />
+          <div class="flow-root sm:flex flex-row gap-0 items-start justify-start self-stretch flex-1 relative">
+            {backend?.map((text, index) => (
+              <div key={index}>
+                <Table text={text} />
               </div>
-            </div>
-            <div class="border-solid border-[#ffffff] border-2 flex flex-row items-center justify-between flex-1 h-[140px] relative">
-              <div
-                class="text-[#ffffff] text-center font-['JejuGothic-Regular',_sans-serif] text-2xl font-normal relative flex-1"
-                style={{ webkitTextStroke: "2px #ffffff" }}
-              >
-                Developing
-                <br />
-                APIs
-              </div>
-            </div>
-            <div class="border-solid border-[#ffffff] border-2 flex flex-row items-center justify-between flex-1 h-[140px] relative">
-              <div
-                class="text-[#ffffff] text-center font-['JejuGothic-Regular',_sans-serif] text-2xl font-normal relative flex-1"
-                style={{ webkitTextStroke: "2px #ffffff" }}
-              >
-                Managing
-                <br />
-                databases
-              </div>
-            </div>
-            <div class="border-solid border-[#ffffff] border-2 flex flex-row items-center justify-between flex-1 h-[140px] relative">
-              <div
-                class="text-[#ffffff] text-center font-['JejuGothic-Regular',_sans-serif] text-2xl font-normal relative flex-1"
-                style={{ webkitTextStroke: "2px #ffffff" }}
-              >
-                Implementing
-                <br />
-                security
-                <br />
-                measures
-              </div>
-            </div>
-            <div class="border-solid border-[#ffffff] border-2 flex flex-row items-center justify-between flex-1 h-[140px] relative">
-              <div
-                class="text-[#ffffff] text-center font-['JejuGothic-Regular',_sans-serif] text-2xl font-normal relative flex-1"
-                style={{ webkitTextStroke: "2px #ffffff" }}
-              >
-                Testing,
-                <br />
-                debugging,
-                <br />
-                and deploying
-              </div>
-            </div>
-            <div class="border-solid border-[#ffffff] border-2 flex flex-row items-center justify-between flex-1 h-[140px] relative">
-              <div
-                class="text-[#ffffff] text-center font-['JejuGothic-Regular',_sans-serif] text-2xl font-normal relative flex-1"
-                style={{ webkitTextStroke: "2px #ffffff" }}
-              >
-                Monitoring
-                <br />
-                system
-                <br />
-                performance
-              </div>
-            </div>
+            ))}
           </div>
         </div>
         <div class="flex flex-col gap-10 items-start justify-start self-stretch shrink-0 relative">
-          <div class="flex flex-row gap-[300px] items-start justify-start self-stretch shrink-0 relative">
+          <div class="flex flex-row gap-[30px] sm:gap-[75px] items-start justify-start self-stretch shrink-0 relative">
             <div class="flex flex-row items-center justify-between shrink-0 relative">
-              <div class="text-[#006400] text-left font-['JejuGothic-Regular',_sans-serif] text-[32px] font-normal uppercase relative">
+              <div
+                class="text-[#006400] text-left font-['JejuGothic-Regular',_sans-serif] sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl
+               font-normal uppercase relative"
+              >
                 02.
               </div>
-              <div class="text-[#ffffff] text-left font-['JejuGothic-Regular',_sans-serif] text-[34px] font-normal uppercase relative">
+              <div
+                class="text-[#ffffff] text-left font-['JejuGothic-Regular',_sans-serif] sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 
+              font-normal uppercase relative"
+              >
                 Frontend
               </div>
             </div>
             <div class="flex flex-col gap-2.5 items-start justify-start flex-1 relative">
               <div class="flex flex-row gap-2.5 items-center justify-end self-stretch shrink-0 relative">
-                <div class="text-[#919191] text-left font-['Inter-Regular',_sans-serif] text-[34px] font-normal relative flex-1">
+                <div
+                  class="text-[#919191] text-left font-['Inter-Regular',_sans-serif] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl
+                 font-normal relative flex-1"
+                >
                   Proficient in frontend development with a strong understanding
                   of key technologies and frameworks.
                 </div>
               </div>
             </div>
           </div>
-          <div class="flex flex-row gap-0 items-start justify-start self-stretch shrink-0 relative">
-            <div class="border-solid border-[#ffffff] border-2 flex flex-row items-center justify-between flex-1 h-[140px] relative">
-              <div
-                class="text-[#ffffff] text-center font-['JejuGothic-Regular',_sans-serif] text-2xl font-normal relative flex-1"
-                style={{ webkitTextStroke: "2px #ffffff" }}
-              >
-                Implement
-                <br />
-                Designs
+          <div class="flow-root sm:flex flex-row gap-0 items-start justify-start self-stretch shrink-0 relative">
+            {frontend?.map((text, index) => (
+              <div key={index}>
+                <Table text={text} />
               </div>
-            </div>
-            <div class="border-solid border-[#ffffff] border-2 flex flex-row items-center justify-between flex-1 h-[140px] relative">
-              <div
-                class="text-[#ffffff] text-center font-['JejuGothic-Regular',_sans-serif] text-2xl font-normal relative flex-1"
-                style={{ webkitTextStroke: "2px #ffffff" }}
-              >
-                Code
-                <br />
-                Responsiveness
-              </div>
-            </div>
-            <div class="border-solid border-[#ffffff] border-2 flex flex-row items-center justify-between flex-1 h-[140px] relative">
-              <div
-                class="text-[#ffffff] text-center font-['JejuGothic-Regular',_sans-serif] text-2xl font-normal relative flex-1"
-                style={{ webkitTextStroke: "2px #ffffff" }}
-              >
-                Interactivity
-              </div>
-            </div>
-            <div class="border-solid border-[#ffffff] border-2 flex flex-row items-center justify-between flex-1 h-[140px] relative">
-              <div
-                class="text-[#ffffff] text-center font-['JejuGothic-Regular',_sans-serif] text-2xl font-normal relative flex-1"
-                style={{ webkitTextStroke: "2px #ffffff" }}
-              >
-                Optimize Performance
-              </div>
-            </div>
-            <div class="border-solid border-[#ffffff] border-2 flex flex-row items-center justify-between flex-1 h-[140px] relative">
-              <div
-                class="text-[#ffffff] text-center font-['JejuGothic-Regular',_sans-serif] text-2xl font-normal relative flex-1"
-                style={{ webkitTextStroke: "2px #ffffff" }}
-              >
-                Cross-Browser
-                <br />
-                Compatibility
-              </div>
-            </div>
-            <div class="border-solid border-[#ffffff] border-2 flex flex-row items-center justify-between flex-1 h-[140px] relative">
-              <div
-                class="text-[#ffffff] text-center font-['JejuGothic-Regular',_sans-serif] text-2xl font-normal relative flex-1"
-                style={{ webkitTextStroke: "2px #ffffff" }}
-              >
-                Testing
-                <br />
-                and Debugging
-              </div>
-            </div>
+            ))}
           </div>
         </div>
         <div class="flex flex-col gap-10 items-start justify-start self-stretch shrink-0 relative">
-          <div class="flex flex-row gap-[300px] items-start justify-start self-stretch shrink-0 relative">
+          <div class="flex flex-row gap-[30px] sm:gap-[140px] items-start justify-start self-stretch shrink-0 relative">
             <div class="flex flex-row items-center justify-between shrink-0 relative">
-              <div class="text-[#006400] text-left font-['JejuGothic-Regular',_sans-serif] text-[32px] font-normal uppercase relative">
+              <div
+                class="text-[#006400] text-left font-['JejuGothic-Regular',_sans-serif] sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl
+               font-normal uppercase relative"
+              >
                 03.
               </div>
-              <div class="text-[#ffffff] text-left font-['JejuGothic-Regular',_sans-serif] text-[34px] font-normal uppercase relative">
+              <div
+                class="text-[#ffffff] text-left font-['JejuGothic-Regular',_sans-serif] sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl
+               font-normal uppercase relative"
+              >
                 Desing
               </div>
             </div>
             <div class="flex flex-col gap-2.5 items-start justify-start flex-1 relative">
               <div class="flex flex-row gap-2.5 items-center justify-end self-stretch shrink-0 relative">
-                <div class="text-[#919191] text-left font-['Inter-Regular',_sans-serif] text-[34px] font-normal relative flex-1">
+                <div
+                  class="text-[#919191] text-left font-['Inter-Regular',_sans-serif] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 
+                font-normal relative flex-1"
+                >
                   A proficient designer with a strong grasp of design principles
                   and techniques, adept at transforming ideas into visually
                   appealing and functional creations. Skilled in utilizing
@@ -242,7 +161,9 @@ const Skills = () => {
               </div>
             </div>
             <svg
-              class="shrink-0 w-[106.99px] h-[106.99px] absolute left-[calc(50%_-_376.71px)] top-[93px] overflow-visible"
+              class="shrink-0 absolute overflow-visible md:w-[149.75px] sm:w-[100px] sm:h-[100px] md:h-[149.12px] w-[70px] h-[70px]
+              md:left-[calc(30%_-_33.78px)] md:top-[calc(60%_-_-16.5px)] sm:left-[calc(30%_-_1.78px)] sm:top-[calc(50%_-_-16.5px)] 
+              left-[calc(30%_-_10.78px)] top-[calc(50%_-_-10.5px)]"
               style={{ transform: "translate(-80.29px, 0px)" }}
               width="161"
               height="142"
@@ -269,65 +190,12 @@ const Skills = () => {
               </defs>
             </svg>
           </div>
-          <div class="flex flex-row gap-0 items-start justify-start self-stretch shrink-0 relative">
-            <div class="border-solid border-[#ffffff] border-2 flex flex-row items-center justify-between flex-1 h-[140px] relative">
-              <div
-                class="text-[#ffffff] text-center font-['JejuGothic-Regular',_sans-serif] text-2xl font-normal relative flex-1"
-                style={{ webkitTextStroke: "2px #ffffff" }}
-              >
-                Quality
-                <br />
-                Assurance
+          <div class="flow-root sm:flex flex-row gap-0 items-start justify-start self-stretch shrink-0 relative">
+            {design?.map((text, index) => (
+              <div key={index}>
+                <Table text={text} />
               </div>
-            </div>
-            <div class="border-solid border-[#ffffff] border-2 flex flex-row items-center justify-between flex-1 h-[140px] relative">
-              <div
-                class="text-[#ffffff] text-center font-['JejuGothic-Regular',_sans-serif] text-2xl font-normal relative flex-1"
-                style={{ webkitTextStroke: "2px #ffffff" }}
-              >
-                Documentation
-              </div>
-            </div>
-            <div class="border-solid border-[#ffffff] border-2 flex flex-row items-center justify-between flex-1 h-[140px] relative">
-              <div
-                class="text-[#ffffff] text-center font-['JejuGothic-Regular',_sans-serif] text-2xl font-normal relative flex-1"
-                style={{ webkitTextStroke: "2px #ffffff" }}
-              >
-                Staying
-                <br />
-                Updated
-              </div>
-            </div>
-            <div class="border-solid border-[#ffffff] border-2 flex flex-row items-center justify-between flex-1 h-[140px] relative">
-              <div
-                class="text-[#ffffff] text-center font-['JejuGothic-Regular',_sans-serif] text-2xl font-normal relative flex-1"
-                style={{ webkitTextStroke: "2px #ffffff" }}
-              >
-                Conceptualizing Designs
-              </div>
-            </div>
-            <div class="border-solid border-[#ffffff] border-2 flex flex-row items-center justify-between flex-1 h-[140px] relative">
-              <div
-                class="text-[#ffffff] text-center font-['JejuGothic-Regular',_sans-serif] text-2xl font-normal relative flex-1"
-                style={{ webkitTextStroke: "2px #ffffff" }}
-              >
-                Implementing
-                <br />
-                Designs
-              </div>
-            </div>
-            <div class="border-solid border-[#ffffff] border-2 flex flex-row items-center justify-between flex-1 h-[140px] relative">
-              <div
-                class="text-[#ffffff] text-center font-['JejuGothic-Regular',_sans-serif] text-2xl font-normal relative flex-1"
-                style={{ webkitTextStroke: "2px #ffffff" }}
-              >
-                Creating
-                <br />
-                Mockups
-                <br />
-                and Prototypes
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

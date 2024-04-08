@@ -42,7 +42,7 @@ const Home = () => {
       <svg
         class="shrink-0 absolute overflow-visible md:w-[149.75px] sm:w-[100px] sm:h-[100px] md:h-[149.12px] w-[70px] h-[70px]
         sm:left-[calc(50%_-_1.78px)] md:left-[calc(80%_-_303.78px)] md:top-[calc(10%_-_-16.5px)] sm:top-[calc(1%_-_-16.5px)] sm:left-[calc(20%_-_-16.5px)] 
-        left-[calc(20%_-_10.78px)] top-[calc(70%_-_-10.5px)]"
+        left-[calc(30%_-_10.78px)] top-[calc(70%_-_-10.5px)]"
         style={{ transform: "translate(-81.7px, 0px)" }}
         width="208"
         height="208"
@@ -138,7 +138,7 @@ const Home = () => {
       <svg
         class="shrink-0 absolute overflow-visible md:w-[149.75px] sm:w-[100px] sm:h-[100px] md:h-[149.12px] w-[70px] 
         h-[70px] sm:left-[calc(50%_-_1.78px)] md:left-[calc(55%_-_303.78px)] md:top-[calc(40%_-_-166.5px)] sm:top-[calc(70%_-_-16.5px)] sm:left-[calc(40%_-_23.78px)] 
-        left-[calc(30%_-_10.78px)] top-[calc(20%_-_-10.5px)]"
+        left-[calc(30%_-_10.78px)] top-[calc(30%_-_-10.5px)]"
         style={{ transform: "translate(-81.7px, 0px)" }}
         width="208"
         height="208"

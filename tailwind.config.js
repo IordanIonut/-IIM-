@@ -8,6 +8,10 @@ module.exports = {
       padding: ['hover'],
     }
   },
+  corePlugins: {
+    textStrokeWidth: true,
+    textStrokeColor: true,
+  },
   theme: {
     extend: {
       fontFamily: {
