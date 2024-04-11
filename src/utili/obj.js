@@ -7,8 +7,8 @@ const projects = [
     },
     {
         position: 2,
-        title: "QuizMaster-Taker",
-        keyWords: ["Android Studio", "Spring Boot", "XML", "Api", "MySQl", "Spring Security", "Authentication", "Grandle", "School", "Android App"],
+        title: "QuizMaster",
+        keyWords: ["Android Studio", "XML", "Spring Boot", "Api", "MySQl", "Spring Security", "Authentication", "Grandle", "School", "Android App"],
         link: "https://github.com/IordanIonut/QuizMaster-Taker"
     },
     {

@@ -33,7 +33,9 @@ const Home = () => {
         }
       >
         <img
-          className={"flex-1 h-3/6 sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] rounded-[327px] relative opacity-60"}
+          className={
+            "flex-1 h-3/6 sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] rounded-[327px] relative opacity-60"
+          }
           style={{ objectFit: "cover" }}
           src={`${process.env.PUBLIC_URL}/Image.png`}
           alt="im"

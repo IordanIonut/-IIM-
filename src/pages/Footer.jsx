@@ -1,19 +1,28 @@
 import React from "react";
+import { Element } from "react-scroll";
 
 const Footer = () => {
   return (
-    <div class="pr-[20px] pl-[20px] sm:pr-[50px] sm:pl-[50px] pt-3 pb-3 flex flex-col gap-10 items-center justify-start self-stretch shrink-0 h-[284px] relative">
+    <Element
+      name="footer"
+      class="pr-[20px] pl-[20px] sm:pr-[50px] sm:pl-[50px] pt-3 pb-3 flex flex-col gap-10 items-center 
+    justify-start self-stretch shrink-0 relative"
+    >
       <div class="flex flex-row items-center justify-between self-stretch flex-1 relative">
         <div class="flex flex-col gap-2.5 items-start justify-end self-stretch flex-1 relative">
           <div class="flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative">
             <div class="flex flex-row gap-2.5 items-center justify-end self-stretch shrink-0 relative">
-              <div class="text-[#919191] text-left font-['Inter-Regular',_sans-serif] text-[34px] font-normal relative flex-1">
+              <div
+                class="text-[#919191] text-left font-['Inter-Regular',_sans-serif] text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl
+                font-normal relative flex-1"
+              >
                 @Email : mariusionut879@yahoo.com
               </div>
             </div>
           </div>
           <svg
-            class="shrink-0 w-[106.99px] h-[106.99px] absolute left-[calc(50%_-_8.86px)] top-[63.19px] overflow-visible"
+            class="shrink-0 absolute left-[calc(50%_-_8.86px)] top-[63.19px] overflow-visible sm:w-[106.99px] sm:h-[106.99px] 
+            w-[70px] h-[70px]"
             style={{ transform: "translate(0px, -84.6px)" }}
             width="142"
             height="161"
@@ -40,7 +49,7 @@ const Footer = () => {
             </defs>
           </svg>
           <svg
-            class="shrink-0 w-[200px] h-[200px] absolute left-[calc(50%_-_-229.42px)] top-[-56px] overflow-visible"
+            class="shrink-0 absolute left-[calc(50%_-_-229.42px)] top-[-10px] overflow-visible sm:w-[200px] sm:h-[200px] w-[100px] h-[100px]"
             style={{ transform: "translate(-141.42px, 0px)" }}
             width="283"
             height="284"
@@ -68,48 +77,66 @@ const Footer = () => {
           </svg>
         </div>
         <div class="flex flex-col gap-2.5 items-center justify-start shrink-0 relative">
-          <div class="flex flex-col gap-2.5 items-start justify-start shrink-0 w-[200px] relative">
+          <a
+            href="https://www.linkedin.com/in/iordan-ionut-08b3021bb/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex flex-col gap-2.5 items-start justify-start shrink-0 relative"
+          >
             <div class="flex flex-row gap-2.5 items-center justify-end self-stretch shrink-0 relative">
               <div
-                class="text-[#919191] text-left font-['Inter-Regular',_sans-serif] text-[34px] font-normal relative"
-                style={{ textDecoration: "underline" }}
+                class="hover:text-[#0077B5] text-[#919191] text-left font-['Inter-Regular',_sans-serif] text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 
+                font-normal relative"
               >
                 Linkedin
               </div>
             </div>
-          </div>
-          <div class="flex flex-col gap-2.5 items-start justify-start shrink-0 w-[200px] relative">
+          </a>
+          <a
+            href="https://github.com/IordanIonut"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex flex-col gap-2.5 items-start justify-start shrink-0 relative"
+          >
             <div class="flex flex-row gap-2.5 items-center justify-end self-stretch shrink-0 relative">
               <div
-                class="text-[#919191] text-left font-['Inter-Regular',_sans-serif] text-[34px] font-normal relative"
-                style={{ textDecoration: "underline" }}
+                class="hover:text-[#ffffff] text-[#919191] text-left font-['Inter-Regular',_sans-serif] text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 
+                font-normal relative"
               >
                 GitHub
               </div>
             </div>
-          </div>
-          <div class="flex flex-col gap-2.5 items-start justify-start shrink-0 w-[200px] relative">
+          </a>
+          <a
+            href="https://www.facebook.com/iordan.ionut.399"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex flex-col gap-2.5 items-start justify-start shrink-0 relative"
+          >
             <div class="flex flex-row gap-2.5 items-center justify-end self-stretch shrink-0 relative">
               <div
-                class="text-[#919191] text-left font-['Inter-Regular',_sans-serif] text-[34px] font-normal relative"
-                style={{ textDecoration: "underline" }}
+                class="hover:text-[#4464A9] text-[#919191] text-left font-['Inter-Regular',_sans-serif] text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 
+                font-normal relative"
               >
                 Facebook
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
       <div class="flex flex-row gap-2.5 items-center justify-center shrink-0 relative">
         <div class="flex flex-col gap-2.5 items-center justify-center shrink-0 relative">
           <div class="flex flex-row gap-2.5 items-center justify-center shrink-0 relative">
-            <div class="text-[#919191] text-center font-['Inter-Regular',_sans-serif] text-2xl font-normal relative">
+            <div
+              class="text-[#919191] text-center font-['Inter-Regular',_sans-serif] text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl
+              font-normal relative"
+            >
               © Copyright 2024. All rights reserved.
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </Element>
   );
 };
 

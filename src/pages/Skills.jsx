@@ -98,7 +98,7 @@ const Skills = () => {
             <div class="flex flex-row items-center justify-between shrink-0 relative">
               <div
                 class="text-[#006400] text-left font-['JejuGothic-Regular',_sans-serif] sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl
-               font-normal uppercase relative"
+                font-normal uppercase relative"
               >
                 02.
               </div>
@@ -113,7 +113,7 @@ const Skills = () => {
               <div class="flex flex-row gap-2.5 items-center justify-end self-stretch shrink-0 relative">
                 <div
                   class="text-[#919191] text-left font-['Inter-Regular',_sans-serif] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl
-                 font-normal relative flex-1"
+                  font-normal relative flex-1"
                 >
                   Proficient in frontend development with a strong understanding
                   of key technologies and frameworks.
@@ -134,13 +134,13 @@ const Skills = () => {
             <div class="flex flex-row items-center justify-between shrink-0 relative">
               <div
                 class="text-[#006400] text-left font-['JejuGothic-Regular',_sans-serif] sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl
-               font-normal uppercase relative"
+                font-normal uppercase relative"
               >
                 03.
               </div>
               <div
                 class="text-[#ffffff] text-left font-['JejuGothic-Regular',_sans-serif] sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl
-               font-normal uppercase relative"
+                font-normal uppercase relative"
               >
                 Desing
               </div>

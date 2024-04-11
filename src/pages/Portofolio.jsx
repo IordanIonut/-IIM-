@@ -14,13 +14,16 @@ const Portofolio = () => {
       class="pr-[20px] pl-[20px] sm:pr-[50px] sm:pl-[50px] pt-3 pb-3 flex flex-col gap-10 items-start justify-start self-stretch shrink-0 relative"
     >
       <div class="self-stretch shrink-0 sm:h-[5px] md:h-[10px] lg:h-[20px] xl:h-[32px] relative">
-        <div class="text-[#006400] text-left font-['JejuGothic-Regular',_sans-serif]  text-2xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-normal absolute flex items-center justify-start">
-        Portofolio
+        <div
+          class="text-[#006400] text-left font-['JejuGothic-Regular',_sans-serif] text-2xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl 
+        font-normal absolute flex items-center justify-start"
+        >
+          Portofolio
         </div>
       </div>
       <div class="flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative">
-        <div class="flex flex-row gap-2.5 items-center justify-end shrink-0 w-[1101px] relative">
-          <div class="text-[#919191] text-left font-['Inter-Regular',_sans-serif] text-[34px] font-normal relative flex-1">
+        <div class="flex flex-row gap-2.5 items-center justify-end self-stretch shrink-0 relative">
+          <div class="text-[#919191] text-left font-['Inter-Regular',_sans-serif] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-normal relative flex-1">
             Click to see the richer content of my top projects more clearly
             <br />
           </div>
@@ -28,16 +31,20 @@ const Portofolio = () => {
       </div>
       <div
         className={
-          "flex flex-row items-end justify-between self-stretch shrink-0 relative" +
+          "flex flex-row gap-[30px] items-end justify-center self-stretch shrink-0 relative" +
           (isBouncing ? " animate-pulse  " : "")
         }
       >
         <Cards
           projects={
+            projects[(position - 2 + 10 * projects.length) % projects.length]
+          }
+        />
+        <Cards
+          projects={
             projects[(position - 1 + 10 * projects.length) % projects.length]
           }
         />
-
         <CardsCenter
           position={position}
           setPosition={setPosition}
@@ -47,10 +54,14 @@ const Portofolio = () => {
             projects[(position + 10 * projects.length) % projects.length]
           }
         />
-
         <Cards
           projects={
             projects[(position + 1 + 10 * projects.length) % projects.length]
+          }
+        />
+        <Cards
+          projects={
+            projects[(position + 2 + 10 * projects.length) % projects.length]
           }
         />
       </div>
