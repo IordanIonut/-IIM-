@@ -9,6 +9,10 @@ const NavBar = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleLinkClick = () => {
+    const url = "https://drive.google.com/uc?export=download&id=1DkbNhYYjnWHRXsCkvsekVIm79iOAhycs";
+    window.open(url, "_blank");
+  };
   return (
     <>
       <nav class="pt-5 pr-[20px] pl-[20px] sm:pr-[50px] sm:pl-[50px] flex flex-row items-center justify-between self-stretch shrink-0 relative overflow-hidden">
@@ -137,13 +141,14 @@ const NavBar = () => {
               <path d="M16.54 16.3901L16.37 16.4701H16.29C16.1979 16.5112 16.1001 16.5382 16 16.5501C15.917 16.5605 15.833 16.5605 15.75 16.5501H15.67L15.5 16.4701L2.1 7.81006C2.03598 8.0516 2.00238 8.30019 2 8.55006V22.5501C2 23.3457 2.31607 24.1088 2.87868 24.6714C3.44129 25.234 4.20435 25.5501 5 25.5501H27C27.7956 25.5501 28.5587 25.234 29.1213 24.6714C29.6839 24.1088 30 23.3457 30 22.5501V8.55006C29.9976 8.30019 29.964 8.0516 29.9 7.81006L16.54 16.3901Z" />
             </svg>
           </a>
-          <Link
+          <Link href={`https://drive.google.com/uc?export=download&id=1DkbNhYYjnWHRXsCkvsekVIm79iOAhycs`}
             to="footer"
             activeClass="active"
             spy={true}
             smooth={true}
             offset={-70}
             duration={500}
+            onClick={() => {handleLinkClick()}}
           >
             <svg
               class="shrink-0 w-4 h-4 sm:w-6 sm:h-6 relative overflow-visible fill-[#919191]"
